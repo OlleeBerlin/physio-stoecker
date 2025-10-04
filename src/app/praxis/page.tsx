@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Navigation, { Footer } from "@/components/Navigation";
 
 export default function Praxis() {
@@ -55,9 +54,9 @@ export default function Praxis() {
               <div className="bg-white rounded-lg shadow-lg p-6">
                 <h3 className="text-xl font-bold text-red-900 mb-4">🎯 Unsere Philosophie</h3>
                 <p className="text-gray-700">
-                  "Jeder Patient ist einzigartig. Deshalb nehmen wir uns die Zeit, die richtige 
+                  &ldquo;Jeder Patient ist einzigartig. Deshalb nehmen wir uns die Zeit, die richtige 
                   Behandlung für Ihre individuellen Bedürfnisse zu finden. Unser Ziel ist es, 
-                  Ihnen zu helfen, Ihre Lebensqualität zurückzugewinnen."
+                  Ihnen zu helfen, Ihre Lebensqualität zurückzugewinnen.&rdquo;
                 </p>
               </div>
 
