@@ -26,7 +26,7 @@ export default function Navigation() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3">
             <img 
-              src="/logo.svg" 
+              src="/logo_schriftzug_300.svg" 
               alt="Physiotherapie Stöcker Logo" 
               className="h-16 w-auto"
             />
