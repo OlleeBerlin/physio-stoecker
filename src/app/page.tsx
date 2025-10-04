@@ -1,26 +1,10 @@
 import Link from "next/link";
+import Navigation, { Footer } from "@/components/Navigation";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Header */}
-      <header className="bg-white shadow-sm">
-        <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="flex items-center space-x-3">
-            <img 
-              src="/logo.svg" 
-              alt="Physiotherapie Stöcker Logo" 
-              className="h-16 w-auto"
-            />
-          </div>
-          <a 
-            href="tel:030853587" 
-            className="bg-orange-400 hover:bg-orange-500 text-white px-6 py-3 rounded-full font-semibold transition-colors"
-          >
-            030 853 58 71
-          </a>
-        </div>
-      </header>
+      <Navigation />
 
       {/* Hero Section */}
       <main className="max-w-6xl mx-auto px-4 py-12">
@@ -152,6 +136,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 }
