@@ -22,65 +22,98 @@ export default function Praxis() {
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-red-900 text-center mb-12">Unser Team</h2>
           
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="bg-white rounded-lg shadow-lg p-8">
-              <div className="text-center mb-6">
-                <div className="w-32 h-32 bg-red-100 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-4xl">👩‍⚕️</span>
-                </div>
-                <h3 className="text-2xl font-bold text-red-900">Annegret Stöcker</h3>
-                <p className="text-gray-600 font-medium">Praxisinhaberin & Physiotherapeutin</p>
+          {/* Team Grid */}
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            {/* Annegret Stöcker */}
+            <div className="bg-white rounded-lg shadow-lg p-6 text-center">
+              <div className="w-24 h-24 bg-red-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                <span className="text-3xl">👩‍⚕️</span>
               </div>
-              
-              <div className="space-y-4 text-gray-700">
-                <p>
-                  <strong>Über 25 Jahre Erfahrung</strong> in der Physiotherapie mit Spezialisierung 
-                  auf neurologische Behandlungen (KG-ZNS) und manuelle Therapie.
-                </p>
-                <div>
-                  <h4 className="font-semibold text-red-900 mb-2">Qualifikationen:</h4>
-                  <ul className="space-y-1 text-sm">
-                    <li>• Staatlich anerkannte Physiotherapeutin</li>
-                    <li>• KG-ZNS (Krankengymnastik am Zentralnervensystem)</li>
-                    <li>• Manuelle Therapie</li>
-                    <li>• Lymphdrainage</li>
-                    <li>• Kontinuierliche Fortbildungen</li>
-                  </ul>
-                </div>
+              <h3 className="text-xl font-bold text-red-900 mb-2">Annegret Stöcker</h3>
+              <p className="text-gray-600 font-medium mb-3">Praxisinhaberin</p>
+              <p className="text-sm text-gray-700 mb-3">
+                <strong>Über 25 Jahre Erfahrung</strong><br/>
+                Spezialisierung: KG-ZNS, Manuelle Therapie
+              </p>
+              <div className="text-xs text-gray-600">
+                <p>• Staatlich anerkannte Physiotherapeutin</p>
+                <p>• KG-ZNS Zertifizierung</p>
+                <p>• Manuelle Therapie</p>
               </div>
             </div>
 
-            <div className="space-y-6">
-              <div className="bg-white rounded-lg shadow-lg p-6">
-                <h3 className="text-xl font-bold text-red-900 mb-4">🎯 Unsere Philosophie</h3>
-                <p className="text-gray-700">
-                  &ldquo;Jeder Patient ist einzigartig. Deshalb nehmen wir uns die Zeit, die richtige 
-                  Behandlung für Ihre individuellen Bedürfnisse zu finden. Unser Ziel ist es, 
-                  Ihnen zu helfen, Ihre Lebensqualität zurückzugewinnen.&rdquo;
-                </p>
+            {/* Therapeutin 2 */}
+            <div className="bg-white rounded-lg shadow-lg p-6 text-center">
+              <div className="w-24 h-24 bg-blue-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                <span className="text-3xl">👩‍⚕️</span>
               </div>
+              <h3 className="text-xl font-bold text-red-900 mb-2">Therapeutin</h3>
+              <p className="text-gray-600 font-medium mb-3">Physiotherapeutin</p>
+              <p className="text-sm text-gray-700 mb-3">
+                <strong>Über 20 Jahre Erfahrung</strong><br/>
+                Spezialisierung: Lymphdrainage, Massage
+              </p>
+              <div className="text-xs text-gray-600">
+                <p>• Staatlich anerkannte Physiotherapeutin</p>
+                <p>• Lymphdrainage Zertifizierung</p>
+                <p>• Triggerpunkt-Therapie</p>
+              </div>
+            </div>
 
-              <div className="bg-white rounded-lg shadow-lg p-6">
-                <h3 className="text-xl font-bold text-red-900 mb-4">⭐ Was uns auszeichnet</h3>
-                <ul className="space-y-2 text-gray-700">
-                  <li className="flex items-center">
-                    <span className="text-green-500 mr-3">✓</span>
-                    Persönliche, individuelle Betreuung
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-green-500 mr-3">✓</span>
-                    Moderne Behandlungsmethoden
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-green-500 mr-3">✓</span>
-                    Spezialisierung auf neurologische Erkrankungen
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-green-500 mr-3">✓</span>
-                    Zentrale Lage mit guter Erreichbarkeit
-                  </li>
-                </ul>
+            {/* Therapeutin 3 */}
+            <div className="bg-white rounded-lg shadow-lg p-6 text-center">
+              <div className="w-24 h-24 bg-green-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                <span className="text-3xl">👩‍⚕️</span>
               </div>
+              <h3 className="text-xl font-bold text-red-900 mb-2">Therapeutin</h3>
+              <p className="text-gray-600 font-medium mb-3">Physiotherapeutin</p>
+              <p className="text-sm text-gray-700 mb-3">
+                <strong>Über 20 Jahre Erfahrung</strong><br/>
+                Spezialisierung: Faszientechnik, CMD
+              </p>
+              <div className="text-xs text-gray-600">
+                <p>• Staatlich anerkannte Physiotherapeutin</p>
+                <p>• Kiefergelenk-Behandlung</p>
+                <p>• Medizinisches Taping</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Philosophie und Auszeichnungen */}
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-white rounded-lg shadow-lg p-6">
+              <h3 className="text-xl font-bold text-red-900 mb-4">🎯 Unsere Philosophie</h3>
+              <p className="text-gray-700">
+                &ldquo;Jeder Patient ist einzigartig. Deshalb nehmen wir uns die Zeit, die richtige 
+                Behandlung für Ihre individuellen Bedürfnisse zu finden. Unser Ziel ist es, 
+                Ihnen zu helfen, Ihre Lebensqualität zurückzugewinnen.&rdquo;
+              </p>
+            </div>
+
+            <div className="bg-white rounded-lg shadow-lg p-6">
+              <h3 className="text-xl font-bold text-red-900 mb-4">⭐ Was uns auszeichnet</h3>
+              <ul className="space-y-2 text-gray-700">
+                <li className="flex items-center">
+                  <span className="text-green-500 mr-3">✓</span>
+                  Drei erfahrene Therapeutinnen (20+ Jahre)
+                </li>
+                <li className="flex items-center">
+                  <span className="text-green-500 mr-3">✓</span>
+                  Persönliche, individuelle Betreuung
+                </li>
+                <li className="flex items-center">
+                  <span className="text-green-500 mr-3">✓</span>
+                  Moderne Behandlungsmethoden
+                </li>
+                <li className="flex items-center">
+                  <span className="text-green-500 mr-3">✓</span>
+                  Spezialisierung auf neurologische Erkrankungen
+                </li>
+                <li className="flex items-center">
+                  <span className="text-green-500 mr-3">✓</span>
+                  Zentrale Lage mit guter Erreichbarkeit
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -174,8 +207,7 @@ export default function Praxis() {
                   <h3 className="font-semibold text-red-900 mb-3">Mit dem Auto</h3>
                   <div className="space-y-2 text-gray-700">
                     <p><span className="font-medium">A100:</span> Ausfahrt Innsbrucker Platz</p>
-                    <p><span className="font-medium">Parken:</span> Parkplätze in der Umgebung verfügbar</p>
-                    <p className="text-sm text-gray-500">Bitte beachten Sie die Parkzeitbegrenzungen</p>
+                    <p className="text-sm text-gray-500">Bitte planen Sie ausreichend Zeit für die Parkplatzsuche ein</p>
                   </div>
                 </div>
 
