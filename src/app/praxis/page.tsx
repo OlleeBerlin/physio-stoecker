@@ -22,59 +22,70 @@ export default function Praxis() {
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-red-900 text-center mb-12">Unser Team</h2>
           
-          {/* Team Grid */}
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            {/* Annegret Stöcker */}
-            <div className="bg-white rounded-lg shadow-lg p-6 text-center">
-              <div className="w-24 h-24 bg-red-100 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-3xl">👩‍⚕️</span>
+          {/* Team Overview */}
+          <div className="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <div className="flex justify-center space-x-4 mb-6">
+                  <div className="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center">
+                    <span className="text-2xl">👩‍⚕️</span>
+                  </div>
+                  <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center">
+                    <span className="text-2xl">👩‍⚕️</span>
+                  </div>
+                  <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center">
+                    <span className="text-2xl">👩‍⚕️</span>
+                  </div>
+                </div>
+                <h3 className="text-2xl font-bold text-red-900 text-center mb-4">
+                  Drei erfahrene Therapeutinnen
+                </h3>
+                <p className="text-gray-700 text-center">
+                  Unser Team besteht aus drei staatlich anerkannten Physiotherapeutinnen 
+                  mit jeweils über 20 Jahren Berufserfahrung.
+                </p>
               </div>
-              <h3 className="text-xl font-bold text-red-900 mb-2">Annegret Stöcker</h3>
-              <p className="text-gray-600 font-medium mb-3">Praxisinhaberin</p>
-              <p className="text-sm text-gray-700 mb-3">
-                <strong>Über 25 Jahre Erfahrung</strong><br/>
-                Spezialisierung: KG-ZNS, Manuelle Therapie
-              </p>
-              <div className="text-xs text-gray-600">
-                <p>• Staatlich anerkannte Physiotherapeutin</p>
-                <p>• KG-ZNS Zertifizierung</p>
-                <p>• Manuelle Therapie</p>
-              </div>
-            </div>
 
-            {/* Therapeutin 2 */}
-            <div className="bg-white rounded-lg shadow-lg p-6 text-center">
-              <div className="w-24 h-24 bg-blue-100 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-3xl">👩‍⚕️</span>
-              </div>
-              <h3 className="text-xl font-bold text-red-900 mb-2">Therapeutin</h3>
-              <p className="text-gray-600 font-medium mb-3">Physiotherapeutin</p>
-              <p className="text-sm text-gray-700 mb-3">
-                <strong>Über 20 Jahre Erfahrung</strong><br/>
-                Spezialisierung: Lymphdrainage, Massage
-              </p>
-              <div className="text-xs text-gray-600">
-                <p>• Staatlich anerkannte Physiotherapeutin</p>
-                <p>• Lymphdrainage Zertifizierung</p>
-                <p>• Triggerpunkt-Therapie</p>
-              </div>
-            </div>
-
-            {/* Therapeutin 3 */}
-            <div className="bg-white rounded-lg shadow-lg p-6 text-center">
-              <div className="w-24 h-24 bg-green-100 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-3xl">👩‍⚕️</span>
-              </div>
-              <h3 className="text-xl font-bold text-red-900 mb-2">Therapeutin</h3>
-              <p className="text-gray-600 font-medium mb-3">Physiotherapeutin</p>
-              <p className="text-sm text-gray-700 mb-3">
-                <strong>Über 20 Jahre Erfahrung</strong><br/>
-                Spezialisierung: Faszientechnik, CMD
-              </p>
-              <div className="text-xs text-gray-600">
-                <p>• Staatlich anerkannte Physiotherapeutin</p>
-                <p>• Kiefergelenk-Behandlung</p>
-                <p>• Medizinisches Taping</p>
+              <div className="space-y-4">
+                <h4 className="font-bold text-red-900 mb-4">Unsere Kompetenzen:</h4>
+                <div className="grid grid-cols-2 gap-3 text-sm text-gray-700">
+                  <div className="flex items-center">
+                    <span className="text-green-500 mr-2">✓</span>
+                    Krankengymnastik
+                  </div>
+                  <div className="flex items-center">
+                    <span className="text-green-500 mr-2">✓</span>
+                    KG-ZNS (Neurologie)
+                  </div>
+                  <div className="flex items-center">
+                    <span className="text-green-500 mr-2">✓</span>
+                    Manuelle Therapie
+                  </div>
+                  <div className="flex items-center">
+                    <span className="text-green-500 mr-2">✓</span>
+                    Lymphdrainage
+                  </div>
+                  <div className="flex items-center">
+                    <span className="text-green-500 mr-2">✓</span>
+                    Massage-Therapie
+                  </div>
+                  <div className="flex items-center">
+                    <span className="text-green-500 mr-2">✓</span>
+                    Faszientechnik
+                  </div>
+                  <div className="flex items-center">
+                    <span className="text-green-500 mr-2">✓</span>
+                    Triggerpunkt-Therapie
+                  </div>
+                  <div className="flex items-center">
+                    <span className="text-green-500 mr-2">✓</span>
+                    Kiefergelenk-Behandlung
+                  </div>
+                </div>
+                <p className="text-sm text-gray-600 mt-4">
+                  Durch kontinuierliche Fortbildungen bleiben wir immer auf dem 
+                  neuesten Stand der Therapiemethoden.
+                </p>
               </div>
             </div>
           </div>
