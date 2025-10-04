@@ -7,13 +7,11 @@ export default function Home() {
       <header className="bg-white shadow-sm">
         <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-red-900 rounded-full flex items-center justify-center">
-              <div className="text-white font-bold text-sm">PS</div>
-            </div>
-            <div>
-              <h1 className="text-red-900 font-bold text-lg">PHYSIOTHERAPIE</h1>
-              <p className="text-red-900 text-sm">STÖCKER</p>
-            </div>
+            <img 
+              src="/logo.svg" 
+              alt="Physiotherapie Stöcker Logo" 
+              className="h-16 w-auto"
+            />
           </div>
           <a 
             href="tel:030853587" 

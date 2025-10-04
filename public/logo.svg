@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" width="200" height="240">
+  <!-- Outer circles -->
+  <circle cx="100" cy="100" r="95" fill="none" stroke="#8B1538" stroke-width="2"/>
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#8B1538" stroke-width="1"/>
+  <circle cx="100" cy="100" r="85" fill="none" stroke="#8B1538" stroke-width="1"/>
+  
+  <!-- Inner mandala pattern -->
+  <g stroke="#8B1538" stroke-width="1.5" fill="none">
+    <!-- Center flower -->
+    <circle cx="100" cy="100" r="15"/>
+    
+    <!-- Petals around center -->
+    <g transform="translate(100,100)">
+      <circle cx="0" cy="-25" r="8"/>
+      <circle cx="17.7" cy="-17.7" r="8"/>
+      <circle cx="25" cy="0" r="8"/>
+      <circle cx="17.7" cy="17.7" r="8"/>
+      <circle cx="0" cy="25" r="8"/>
+      <circle cx="-17.7" cy="17.7" r="8"/>
+      <circle cx="-25" cy="0" r="8"/>
+      <circle cx="-17.7" cy="-17.7" r="8"/>
+    </g>
+    
+    <!-- Outer ring elements -->
+    <g transform="translate(100,100)">
+      <circle cx="0" cy="-50" r="12"/>
+      <circle cx="35.4" cy="-35.4" r="12"/>
+      <circle cx="50" cy="0" r="12"/>
+      <circle cx="35.4" cy="35.4" r="12"/>
+      <circle cx="0" cy="50" r="12"/>
+      <circle cx="-35.4" cy="35.4" r="12"/>
+      <circle cx="-50" cy="0" r="12"/>
+      <circle cx="-35.4" cy="-35.4" r="12"/>
+    </g>
+    
+    <!-- Connecting lines -->
+    <g transform="translate(100,100)">
+      <line x1="0" y1="-15" x2="0" y2="-38"/>
+      <line x1="10.6" y1="-10.6" x2="23.4" y2="-23.4"/>
+      <line x1="15" y1="0" x2="38" y2="0"/>
+      <line x1="10.6" y1="10.6" x2="23.4" y2="23.4"/>
+      <line x1="0" y1="15" x2="0" y2="38"/>
+      <line x1="-10.6" y1="10.6" x2="-23.4" y2="23.4"/>
+      <line x1="-15" y1="0" x2="-38" y2="0"/>
+      <line x1="-10.6" y1="-10.6" x2="-23.4" y2="-23.4"/>
+    </g>
+  </g>
+  
+  <!-- Text -->
+  <text x="100" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#8B1538">
+    PHYSIOTHERAPIE
+  </text>
+  <text x="100" y="238" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#8B1538">
+    STÖCKER
+  </text>
+</svg>
