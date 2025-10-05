@@ -4,8 +4,18 @@ export default function Home() {
     <div className="min-h-screen bg-white">
 
       {/* Hero Section - Stykka Style */}
-      <section className="relative min-h-screen flex items-center justify-center">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100">
+        {/* Background Image */}
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30" 
+             style={{
+               backgroundImage: "url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwMCIgaGVpZ2h0PSI4MDAiIHZpZXdCb3g9IjAgMCAxMjAwIDgwMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjEyMDAiIGhlaWdodD0iODAwIiBmaWxsPSIjRjNGNEY2Ii8+CjxwYXRoIGQ9Ik0wIDQwMEgxMjAwTTYwMCAwVjgwME0zMDAgMjAwSDkwME0yMDAgNjAwSDEwMDAiIHN0cm9rZT0iI0U1RTdFQiIgc3Ryb2tlLXdpZHRoPSIxIiBvcGFjaXR5PSIwLjMiLz4KPGNpcmNsZSBjeD0iMzAwIiBjeT0iMjAwIiByPSI0IiBmaWxsPSIjRjNGNEY2IiBvcGFjaXR5PSIwLjUiLz4KPGNpcmNsZSBjeD0iOTAwIiBjeT0iNjAwIiByPSI2IiBmaWxsPSIjRjNGNEY2IiBvcGFjaXR5PSIwLjMiLz4KPGNpcmNsZSBjeD0iNjAwIiBjeT0iNDAwIiByPSI4IiBmaWxsPSIjRjNGNEY2IiBvcGFjaXR5PSIwLjIiLz4KPC9zdmc+')"
+             }}>
+        </div>
+        
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-white/70"></div>
+        
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-center">
           {/* Subtitle */}
           <div className="mb-8">
             <p className="text-sm font-medium text-gray-600 uppercase tracking-wider">
