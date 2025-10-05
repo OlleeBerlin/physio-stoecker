@@ -27,13 +27,17 @@ export default function Navigation() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`text-sm font-medium transition-colors hover:text-red-700 ${
+                className={`relative text-sm font-medium transition-all duration-300 ease-in-out group ${
                   pathname === item.href
                     ? "text-red-900"
-                    : "text-gray-700"
+                    : "text-gray-700 hover:text-red-700"
                 }`}
               >
                 {item.label}
+                {/* Hover underline animation */}
+                <span className={`absolute bottom-0 left-0 w-0 h-0.5 bg-red-700 transition-all duration-300 ease-in-out group-hover:w-full ${
+                  pathname === item.href ? "w-full" : ""
+                }`} />
               </Link>
             ))}
           </nav>
@@ -41,11 +45,11 @@ export default function Navigation() {
           {/* Mobile Menu Button - Left */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden p-2"
+            className="lg:hidden p-2 transition-all duration-300 ease-in-out hover:bg-gray-100 rounded-lg"
             aria-label="Menü öffnen"
           >
             <svg
-              className="w-6 h-6 text-gray-700"
+              className="w-6 h-6 text-gray-700 transition-transform duration-300 ease-in-out"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -69,7 +73,7 @@ export default function Navigation() {
           </button>
 
           {/* Center Logo */}
-          <Link href="/" className="flex items-center absolute left-1/2 transform -translate-x-1/2">
+          <Link href="/" className="flex items-center absolute left-1/2 transform -translate-x-1/2 transition-transform duration-300 ease-in-out hover:scale-105">
             <Image 
               src="/logo_schriftzug_300.svg" 
               alt="Physiotherapie Stöcker Logo" 
@@ -84,7 +88,7 @@ export default function Navigation() {
           <div className="flex items-center">
             <a 
               href="tel:030853587" 
-              className="inline-flex items-center px-6 py-2 bg-orange-400 hover:bg-orange-500 text-white text-sm font-medium transition-colors rounded-full"
+              className="inline-flex items-center px-6 py-2 bg-orange-400 hover:bg-orange-500 text-white text-sm font-medium transition-all duration-300 ease-in-out rounded-full hover:shadow-lg hover:scale-105 active:scale-95"
             >
               Termin vereinbaren
             </a>
@@ -92,36 +96,37 @@ export default function Navigation() {
         </div>
 
         {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <div className="lg:hidden border-t border-gray-200 bg-white">
-            <nav className="px-6 py-6 space-y-6">
-              {navItems.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  onClick={() => setIsMenuOpen(false)}
-                  className={`block text-lg font-medium transition-colors ${
-                    pathname === item.href
-                      ? "text-red-900 bg-red-50 rounded px-2 py-1"
-                      : "text-gray-700 hover:text-red-700"
-                  }`}
-                >
-                  {item.label}
-                </Link>
-              ))}
-              
-              {/* Contact in Mobile Menu */}
-              <div className="pt-6 border-t border-gray-200">
-                <a 
-                  href="tel:030853587" 
-                  className="inline-flex items-center px-6 py-3 bg-orange-400 hover:bg-orange-500 text-white text-sm font-medium transition-colors rounded-full w-full justify-center"
-                >
-                  Termin vereinbaren
-                </a>
-              </div>
-            </nav>
-          </div>
-        )}
+        <div className={`lg:hidden border-t border-gray-200 bg-white transition-all duration-300 ease-in-out overflow-hidden ${
+          isMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+        }`}>
+          <nav className="px-6 py-6 space-y-6">
+            {navItems.map((item, index) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                onClick={() => setIsMenuOpen(false)}
+                className={`block text-lg font-medium transition-all duration-300 ease-in-out transform ${
+                  pathname === item.href
+                    ? "text-red-900 bg-red-50 rounded px-2 py-1"
+                    : "text-gray-700 hover:text-red-700 hover:translate-x-2"
+                } ${isMenuOpen ? "translate-x-0" : "-translate-x-4"}`}
+                style={{ transitionDelay: `${index * 50}ms` }}
+              >
+                {item.label}
+              </Link>
+            ))}
+            
+            {/* Contact in Mobile Menu */}
+            <div className="pt-6 border-t border-gray-200">
+              <a 
+                href="tel:030853587" 
+                className="inline-flex items-center px-6 py-3 bg-orange-400 hover:bg-orange-500 text-white text-sm font-medium transition-all duration-300 ease-in-out rounded-full w-full justify-center hover:shadow-lg hover:scale-105 active:scale-95"
+              >
+                Termin vereinbaren
+              </a>
+            </div>
+          </nav>
+        </div>
       </div>
     </header>
   );
