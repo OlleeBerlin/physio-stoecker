@@ -1,9 +1,6 @@
-import Navigation, { Footer } from "@/components/Navigation";
-
 export default function Praxis() {
   return (
     <div className="min-h-screen bg-gray-50">
-      <Navigation />
 
       {/* Hero Section */}
       <section className="bg-white py-16">
@@ -275,8 +272,6 @@ export default function Praxis() {
           </div>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 }

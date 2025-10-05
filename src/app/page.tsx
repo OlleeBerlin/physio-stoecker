@@ -1,10 +1,8 @@
 import Link from "next/link";
-import Navigation, { Footer } from "@/components/Navigation";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-gray-50">
-      <Navigation />
 
       {/* Hero Section */}
       <main className="max-w-6xl mx-auto px-4 py-12">
@@ -136,8 +134,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 }

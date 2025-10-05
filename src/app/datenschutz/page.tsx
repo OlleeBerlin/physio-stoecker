@@ -1,10 +1,7 @@
 import Link from "next/link";
-import Navigation, { Footer } from "@/components/Navigation";
-
 export default function Datenschutz() {
   return (
     <div className="min-h-screen bg-gray-50">
-      <Navigation />
 
       {/* Content */}
       <main className="max-w-4xl mx-auto px-4 py-12">
@@ -223,8 +220,6 @@ export default function Datenschutz() {
           </div>
         </div>
       </main>
-
-      <Footer />
     </div>
   );
 }
